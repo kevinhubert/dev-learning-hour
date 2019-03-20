@@ -1,0 +1,15 @@
+.list-item {
+  padding: 15px 0 0 0;
+  display: flex;
+  cursor: pointer;
+  &__image {
+    margin-right: 15px;
+  }
+  &__info {
+    &--title {
+      font-weight: 700;
+    }
+    &--desc {
+    }
+  }
+}
