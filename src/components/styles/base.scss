@@ -1,0 +1,12 @@
+$x-small: 0px;
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$x-large: 1200px;
+
+// Media Query for each size
+@mixin screen-size($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}
