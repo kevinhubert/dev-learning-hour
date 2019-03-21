@@ -1,2 +1,15 @@
-@import './components/styles/bootstrap.scss';
-@import './components/styles/base.scss';
+@import "./components/styles/bootstrap.scss";
+@import "./components/styles/base.scss";
+
+@import "./components/styles/header.scss";
+@import "./components/styles/sidebar.scss";
+
+.app {
+  @extend .row;
+  .stage {
+    @extend .col-md-8;
+  }
+  .sidebar {
+    @extend .col-md-4;
+  }
+}

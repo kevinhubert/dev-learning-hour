@@ -1,0 +1,13 @@
+.list-item {
+  display: flex;
+  margin-bottom: 15px;
+  cursor: pointer;
+  &__image {
+    margin-right: 15px;
+  }
+  &__desc {
+    &--title {
+      font-weight: 700;
+    }
+  }
+}
