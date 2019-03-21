@@ -11,7 +11,7 @@ class App extends React.Component {
       <div className="l-container">
         <Header />
         <div className="app">
-          <Stage />
+          <Stage title="Video Title Here" />
           <Sidebar />
         </div>
       </div>

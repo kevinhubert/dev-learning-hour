@@ -15,7 +15,7 @@ class Stage extends React.Component {
           />
         </div>
         <div className="l-stage__info">
-          <div className="l-stage__info--title">Video Title</div>
+          <div className="l-stage__info--title">{this.props.title}</div>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nemo,
           temporibus asperiores ratione dolores vel unde dicta molestias
           reiciendis tempore labore, nihil eligendi, cum minus. Quibusdam quia
