@@ -4,12 +4,12 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-      <h1>{this.props.title}</h1>
+        <h1>{this.props.title}</h1>
         <form action="">
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Search videos..."
             />
           </div>
