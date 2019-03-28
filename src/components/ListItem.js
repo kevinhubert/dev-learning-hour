@@ -3,8 +3,12 @@ import React from 'react';
 class ListItem extends React.Component {
   render() {
     const { thumbnails, title, description } = this.props.video.snippet;
+
     return (
-      <div onClick={this.props.onVideoClick} className="list-item">
+      <div
+        onClick={() => this.props.onVideoSelect(this.props.video)}
+        className="list-item"
+      >
         <div className="list-item__image">
           <img src={thumbnails.default.url} alt="" />
         </div>

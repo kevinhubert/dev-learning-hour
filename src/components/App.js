@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Stage from './Stage';
+import StageDescription from './StageDescription';
 
 import '../App.scss';
 
@@ -9,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedVideo: '',
+      selectedVideo: null,
       videoList: []
     };
   }
@@ -29,8 +30,8 @@ class App extends React.Component {
       );
   };
 
-  onVideoSelect = event => {
-    console.log(event);
+  onVideoSelect = video => {
+    this.setState({ selectedVideo: video });
   };
 
   render() {
@@ -39,10 +40,11 @@ class App extends React.Component {
         <Header onTermSubmit={this.onTermSubmit} />
 
         <div className="app">
-          <Stage currentVideo={this.state.currentVideo} />
+          <Stage selectedVideo={this.state.selectedVideo} />
+          <StageDescription selectedVideo={this.state.selectedVideo} />
           <Sidebar
             videoList={this.state.videoList}
-            onVideoClick={this.onVideoSelect}
+            onVideoSelect={this.onVideoSelect}
           />
         </div>
       </div>
