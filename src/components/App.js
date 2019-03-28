@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Stage from './Stage';
@@ -9,15 +9,16 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-            <Header title="Youtube took my $$$"/>
-
+        <Header title="Youtube took my $$$" />
         <div className="app">
+          <div className="stage">
             <Stage />
-            <Sidebar />
+          </div>
+          <Sidebar />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;

@@ -3,7 +3,7 @@ import React from 'react';
 class Stage extends React.Component {
   render() {
     return (
-      <div className="stage">
+      <div>
         <iframe
           width="100%"
           height="315"
